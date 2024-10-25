@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Reino de los Postres</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar...">
+            <button type="button" onclick="buscarPalabra()">Buscar</button>
+        </div>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#catalog">Catálogo</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Wrap all content inside main -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <button onclick="scrollToCatalog()"><img src="img/logo.png" alt=""></button>
+        </section>
+
+     <!-- About Us Section -->
+<section id="about" class="about">
+    <h2 class="titulos">Sobre Nosotros</h2>
+    <div class="about-content">
+        <div class="text-block">
+            <h4 class="titulos">Nuestra Mision</h4>
+            <div class="text">Elaborar deliciosos postres de excelente relación calidad - precio para el deleite de nuestros clientes.
+                Buscamos transmitir nuestro amor por lo dulce mediante nuestras elaboraciones</div>
+        </div>
+        <div class="text-block">
+            <h4 class="titulos">Nuestra Vision</h4>
+            <div class="text">En el futuro vemos a nuestra empresa siendo reconocida a nivel mundial por su impecable atención al cliente, sus exquisitos postres y con sucursales a nivel continental</div>
+        </div>
+    </div>
+    <h3>Horario de atención: Luneas a Viernes de 8:00 a 17:00 hs</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6562.693662778635!2d-58.475988!3d-34.671195!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc944d5f82e63%3A0xe818221c79decb9!2sZelarray%C3%A1n%205300%2C%20C1439%20AGR%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1725600592375!5m2!1ses-419!2sar" 
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="location-address">
+        Zelarrayán 5300, C1439 AGR, Cdad. Autónoma de Buenos Aires
+    </div>
+</section>
+
+  
+<section id="catalog" class="catalog">
+    <h2 class="catalog-title" >NUESTRO CATÁLOGO</h2>
+    <div class="product-card">
+        <div class="rectangle">
+            <img src="img/galleta.png" alt="Product Image" class="product-image">
+        <div class="product-info">
+            <h2 class="product-title">galletas de chocolate</h2>
+            <p class="product-description">Deliciosas y crujientes cookies de chocolate, hechas con los mejores ingredientes. Cada bocado está lleno de trocitos de chocolate derretido, perfectas para acompañar tu café o disfrutar en cualquier momento del día. </p>
+            <button onclick="scrollToContact()" class="product-button">Consultar precio</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="rectangle2">
+        <div class="product-info">
+            <h2 class="product-title">magdalenas</h2>
+        
+            <p class="product-description">Esponjosas y suaves magdalenas caseras, horneadas a la perfección con un toque de vainilla y un delicado sabor dulce. Ideales para acompañar tus desayunos o meriendas, con un toque tradicional que te encantará. </p>
+            <button onclick="scrollToContact()" class="product-button">Consultar precio</button>
+        </div>
+        <img src="img/muffin.png" alt="Product Image" class="product-image">
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="rectangle3">
+            <img src="img/budin.png" alt="Product Image" class="product-image">
+        <div class="product-info">
+            <h2 class="product-title">budin</h2>
+            <p class="product-description">Delicioso budín casero, con una textura suave y esponjosa, lleno de sabor. Perfecto para disfrutar en cualquier ocasión, ya sea solo o acompañado de un toque de frutas o chocolate. </p>
+            <button onclick="scrollToContact()" class="product-button">Consultar precio</button>
+        </div>
+        </div>
+    </div>
+    
+
+    <div class="product-card">
+        <div class="rectangle4">
+        <div class="product-info">
+            <h2 class="product-title">bizcochuelo</h2>
+            <p class="product-description">Clásico bizcochuelo esponjoso y ligero, hecho con ingredientes frescos y naturales. Ideal como base para tus tortas o para disfrutar solo con un toque de azúcar glass. Suave, delicioso y perfecto para cualquier ocasión. </p>
+            <button onclick="scrollToContact()" class="product-button">Consultar precio</button>
+        </div>
+        <img src="img/bizcochuelo.png" alt="Product Image" class="product-image">
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="rectangle5">
+            <img src="img/ricota.png" alt="Product Image" class="product-image">
+        <div class="product-info">
+            <h2 class="product-title">torta de ricota</h2>
+            <p class="product-description">Exquisita torta de ricota, con una textura cremosa y suave, envuelta en una base delicada de masa. Su sutil dulzura y frescura la hacen perfecta para disfrutar como postre o acompañar una tarde de café. </p>
+            <button onclick="scrollToContact()" class="product-button">Consultar precio</button>
+        </div>
+        </div>
+    </div>
+
+</section>
+
+
+      
+       <!-- Contact Form Section -->
+       <section id="contact" class="contact">
+        <h2 id="contact-title" class="titulos">Contactanos</h2>
+        <h3 id="contact-heading" class="textos">Asesoramiento y presupuesto sin cargo</h3>
+        <form action="send_email.php" method="POST">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Consulta</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+    
+            <button type="submit" class="textos">Enviar</button>
+        </form>
+    </section>
+    
+    
+    
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="left">
+            <div class="social-icons">
+                <a href="https://wa.me/1134473420" target="_blank">
+                    <img src="img/png2.png" alt="WhatsApp">
+                </a>
+                <a href="https://instagram.com/elreinodelospostres_srl" target="_blank">
+                    <img src="img/png3.png" alt="Instagram">
+                </a>
+                <a href="mailto:elreinodelospostres767@gmail.com" target="_blank">
+                    <img src="img/pngwing.com (1).png" alt="Gmail">
+                </a>
+            </div>
+        </div>
+        <p>&copy; 2024 El Reino de los Postres</p>
+    </footer>
+
+    <!-- Reference to the JavaScript file -->
+    <script src="script.js"></script>
+
+</body> 
+</html>
